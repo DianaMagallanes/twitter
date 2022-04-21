@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/DianaMagallanes/twitter/issues"
   },
-  "homepage": "https://github.com/DianaMagallanes/twitter#readme"
+  "homepage": "https://github.com/DianaMagallanes/twitter#readme",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
 }
