@@ -7,6 +7,9 @@ class UserView{
         if (payload===null){ 
             objMessage = {error:"payload no existe"}
         }
+        else if(payload.username===null || payload.name===null || payload.id===null){
+            objMessage = {error:"necesitan tener un valor válido"}
+        }
         return objMessage
     }
 }
