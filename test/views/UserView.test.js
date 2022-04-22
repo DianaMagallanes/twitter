@@ -18,5 +18,13 @@ describe ("Tests for UserView",()=>{
         const payload = {username:"Username"}
         const result = UserView.createUser(payload)
         expect(result.error).toMatch(/necesitan tener un valor válido/)
-    })
+    });
+    
+    test("Create a user by a given valid payload",()=>{
+        const payload = {username:"Username",name:"diana",id:1}
+        const result = UserView.createUser(payload)
+        expect(result.name).toBe("diana")
+        expect(result.username).toBe("Username")
+        expect(result.id).toBe(1)
+    });
 })
